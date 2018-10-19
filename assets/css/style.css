@@ -1,0 +1,46 @@
+body, html {
+    background: url("../images/javascript.png");
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-size: cover; -ms-background-size: cover; -o-background-size: cover; -moz-background-size: cover ;-webkit-background-size: cover;
+    background-position: center; 
+    height: 100vh;
+    overflow: auto;
+}
+
+h1 { 
+    color: rgb(226, 226, 110);
+    font-family: 
+    'Open Sans Condensed', sans-serif; 
+    font-size: 84px; 
+    font-weight: 700; 
+    line-height: 64px; 
+    margin: 5 0 0; 
+    padding: 20px 30px; 
+    text-align: center; 
+}
+
+.trivia {
+    /* background: url("../images/javascript.png") no-repeat center center;  */
+
+    background-color: rgb(34, 33, 33, .5);
+}
+
+.trivia p, label {
+    color: rgb(110, 183, 226);
+}
+
+@font-face {
+    font-family: "Digital Counter 7";
+    src: url("../fonts/digital-counter-7/digital_counter_7.ttf");
+}
+@font-face {
+    font-family: "LED";
+    src: url("../fonts/led/led_real.ttf");
+}
+
+#timer{
+    color: HSL(120, 95.7%, 63.1%);
+    font-family: 'Digital Counter 7';
+    font-size: 100px;
+}
