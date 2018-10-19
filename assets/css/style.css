@@ -34,10 +34,6 @@ h1 {
     font-family: "Digital Counter 7";
     src: url("../fonts/digital-counter-7/digital_counter_7.ttf");
 }
-@font-face {
-    font-family: "LED";
-    src: url("../fonts/led/led_real.ttf");
-}
 
 #timer{
     color: HSL(120, 95.7%, 63.1%);
