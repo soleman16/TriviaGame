@@ -18,7 +18,7 @@ let clock = {
                     questions[game.currentQuestion].answer);
                 setTimeout(function(){
                     if (game.isGameOver()){
-                        game.displayFinalResults();
+                        game.calculateFinalResults();
                     }
                     else{
                         game.currentQuestion++;
@@ -42,7 +42,7 @@ let game = {
     numberCorrect: 0,
     numberIncorrect: 0,
     numberUnanswered: 0,
-    maxQuestions: 30,
+    maxQuestions: 5,
     startGame: function(){
         $(page.startButtonSelector).on("click", function(){
             clock.start();
@@ -54,7 +54,7 @@ let game = {
         page.renderResultsSection(game.evaluateUserAnswer);
         setTimeout(function(){
             if (game.isGameOver()){
-                game.displayFinalResults();
+                game.calculateFinalResults();
             }
             else{
                 game.currentQuestion++;
@@ -83,7 +83,7 @@ let game = {
         // adding 1 to current question because it is zero based.
         return game.currentQuestion+1 === game.maxQuestions;
     },
-    displayFinalResults: function(){
+    calculateFinalResults: function(){
         let displayMessage = "You have completed the JavaScript Trivia Game! <br><br>" +
             "Correct: " + game.numberCorrect + "<br>" +
             "Incorrect: " + game.numberIncorrect + "<br>" +
