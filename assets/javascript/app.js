@@ -42,7 +42,7 @@ let game = {
     numberCorrect: 0,
     numberIncorrect: 0,
     numberUnanswered: 0,
-    maxQuestions: 5,
+    maxQuestions: 30,
     startGame: function(){
         $(page.startButtonSelector).on("click", function(){
             clock.start();
